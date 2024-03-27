@@ -1,3 +1,4 @@
+import { GetCharacterRequest } from "../dto/character";
 import CharacterRepository from "../repositories/characterRepository";
 import { Character } from "../utils/ecs/character";
 
@@ -12,7 +13,7 @@ export default class CharacterService {
         this.characterRepository = characterRepository;
     }
 
-    get({ name }: { name: string }) {
+    get({ name }: GetCharacterRequest) {
         return this.characterRepository.get(name);
     }
 

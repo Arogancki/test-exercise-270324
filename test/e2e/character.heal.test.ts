@@ -1,7 +1,7 @@
 import request from 'supertest';
 import { DependencyContainer, Types } from "../../src/utils/dependency";
 import { Express } from 'express';
-import expressServerFactory from '../../src/factories/expressServerFactory';  // Path to your TypeScript Express app
+import expressServerFactory from '../../src/factories/expressServerFactory';
 import { asValue } from 'awilix';
 
 const ENDPOINT = "/api/v1/character/heal";

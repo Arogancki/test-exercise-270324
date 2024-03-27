@@ -44,7 +44,7 @@ amount?: number // optional, default: d20 roll
 ```
 
 
-3. Add temp hit points to a character - @Post /api/v1/character/temphp/add with body
+4. Add temp hit points to a character - @Post /api/v1/character/temphp/add with body
 ```
 name: string
 amount?: number // optional, default: d20 roll
