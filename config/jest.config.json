@@ -1,0 +1,28 @@
+{
+  "automock": false,
+  "clearMocks": true,
+  "collectCoverageFrom": [
+    "src/**/*.{js|ts}",
+    "!**/node_modules/**"
+  ],
+  "coverageDirectory": "<rootDir>/coverage",
+  "resetModules": true,
+  "rootDir": "../",
+  "testEnvironment": "node",
+  "testMatch": [
+    "<rootDir>/tests/**/*.ts?(x)",
+    "<rootDir>/**/?(*.)(spec|test).ts?(x)"
+  ],
+  "moduleFileExtensions": [
+    "ts",
+    "tsx",
+    "js",
+    "jsx",
+    "json"
+  ],
+  "transform": {
+    "^.+\\.(ts|tsx)$": "ts-jest"
+  },
+  "verbose": false,
+  "setupFilesAfterEnv": ["<rootDir>/test/setup/testSetup.ts"]
+}
